@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 	<head>
 		<meta charset="utf-8">
@@ -31,10 +31,10 @@
 			</header>
 
 			<main id="principal-home">
-				<h1>
-					Lorem ipsum dolor sit amet
+				<h1 class="typing-animation">
+					Lorem ipsum dolor sit amet!
 				</h1>
-				<h3>
+				<h3 class="showup-animation">
 					Consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
 				</h3>
 			</main>
@@ -43,7 +43,7 @@
 		<section class="serviços-grid-container" id="serviços">
 			<h1>Serviços</h1>
 
-			<div id="principal-serviços">
+			<div id="principal-serviços" class="desktop-view">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
 				</p>
@@ -55,7 +55,7 @@
 		<section class="portifólio-grid-container" id="portifólio">
 				<h1>Portifólio</h1>
 				
-				<div id="principal-portifólio">
+				<div id="principal-portifólio" class="desktop-view">
 					<div>
 						<img src="imagens/portifolio1.jpg" alt="Portifolio 1" class="foto-portifolio">Portifólio 1</img><br>
 						<img src="imagens/portifolio2.jpg" alt="Portifolio 2" class="foto-portifolio">Portifólio 2</img><br>
@@ -72,7 +72,7 @@
 				<h1>Sobre</h1>
 			</div>
 
-			<div id="principal-sobre">
+			<div class="desktop-view" id="principal-sobre">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
 				</p>
@@ -89,22 +89,22 @@
 						<legend>Informações para Contato</legend>
 	
 						<label for="name">Nome</label><br>
-						<input type="text" name="nome" placeholder="Nome completo">
+						<input type="text" name="nome" placeholder="Nome completo" class="campo-formulario">
 	
 						<br><br>
 	
 						<label for="email">Email</label><br>
-						<input type="text" name="email" placeholder="aaaa@email.com">
+						<input type="text" name="email" placeholder="aaaa@email.com" class="campo-formulario">
 	
 						<br><br>
 	
 						<label for="telefone">Telefone</label><br>
-						<input type="text" name="telefone" placeholder="(99) 99999-9999">
+						<input type="text" name="telefone" placeholder="(99) 99999-9999" class="campo-formulario">
 	
 						<br><br>
 	
 						<label>Mensagem</label><br>
-						<textarea placeholder="Mensagem"></textarea>
+						<textarea placeholder="Mensagem" class="campo-formulario"></textarea>
 	
 						<br><br>
 	
@@ -118,9 +118,9 @@
 							<label for="preferencia">Telefone</label>
 						</fieldset>
 	
-						<br><br>
+						<br>
 	
-						<input type="submit" value="Enviar Formulário">
+						<input type="submit" value="Enviar Formulário" id="contato-button">
 					</fieldset>
 				</form>
 			</div>

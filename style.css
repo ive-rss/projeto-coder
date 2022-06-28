@@ -4,7 +4,6 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
 	grid-template-columns: 100vw;
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas: "home-grid-container" "serviços-grid-container" "portifólio-grid-container" "sobre-grid-container" "contato-grid-container";
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -65,7 +65,7 @@ header {
 .menu a {
 	display: block;
 	padding: .5rem;
-	color: #F6efea;
+	color: #ede5ded9;
 	font-weight: 900;
 	text-transform: uppercase;
 	font-size: .765em;
@@ -81,7 +81,7 @@ header {
 	align-items: center;
 	justify-content: space-evenly;
 	color: #F6efea;
-	font-size: 0.9em;
+	font-size: 1.2em;
 	max-width: 60vw;
 	max-height: 100vh;
 	height: 50vh;
@@ -96,10 +96,11 @@ header {
 }
 
 #principal-home h3 {
+	font-weight: 100;
+	color: white;
     text-shadow: 4px 3px 2px #04f4ba36;
 	text-align: justify
 }
-
 
 .serviços-grid-container {
 	grid-area: serviços-grid-container;
@@ -155,7 +156,7 @@ header {
 #portifólio h1 {
 	grid-area: titulo-fortfólio;
 	text-shadow: 2px 2px 1px #bac;
-	margin-left: 50px;
+	margin-left: 50px;;
 }	
 
 #principal-portifólio {
@@ -226,13 +227,32 @@ header {
 	display: flex;
 	grid-area: formulário-contato;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: .9em;
+	margin: 0px auto;
+	font-size: .7em;
 }
 
 #contato fieldset {
-	padding: 10px;
+	padding: .5rem 5rem;
+	border: none;
+	border-radius: .5rem;
+	background-color: #f7f7f7;
+}
+
+.campo-formulario {
+	width: 100%;
+	padding: .5rem;
+	background-color: white;
+	border: solid 1px #ddd;
+	border-radius: .5rem;
+}
+
+#contato-button {
+	background-color: #6d436c;
+	padding: .6rem .6rem;
+	color: rgb(248, 241, 249);
+	border: none;
+	border-radius: .4rem;
+	font-size: .9em;
 }
 
 footer {
@@ -247,7 +267,7 @@ footer {
 }
 
 #copy {
-	color: #F6efea;
+	color: #c9faef;
 	text-transform: uppercase;
 	font-size: .765em;
 	font-weight: 400;
@@ -281,58 +301,98 @@ footer {
 
 	.menu a {
 		background-color: transparent;
+		position: relative;
+		padding: 0 10px;
 	}
-
-	.active {
-		text-decoration: underline #F6efea 3px;
-	}
-
+	
 	.menu a:hover {
-		text-decoration: underline #6D436C 3px;
+		color: white;
+	}
+
+	.menu a::after {
+		content: "";
+		position: absolute;
+		background-color: #04f4bc;
+		height: 3px;
+		width: 100%;
+		left: 0;
+		bottom: -8px;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 250ms ease-in;
+	}
+
+	.menu a:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+		width: 100%;
+	}
+
+	.desktop-view {
+		flex-direction: row !important;
+		max-width: 70vw;
+		max-height: 100vh;
+		margin: auto;
 	}
 
 	#principal-home, #serviços, #portifólio, #sobre, #contato {
 		font-size: 1.5em;
 	}
 
-	#serviços {
-		font-size: 1.5em;
+	#principal-home h1 {
+		border-right: 2px solid #F6efea;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
-	#principal-serviços {
-		flex-direction: row;
-		max-width: 70vw;
-		max-height: 100vh;
-		margin: auto;
+	.typing-animation {
+		animation: cursor 800ms steps(40) infinite normal, 
+			typing 4s steps(40) 1s normal both;
 	}
 
-	#serviços img {
+	@keyframes typing {
+		from{
+			width: 0;
+		}
+		to {
+			width: 15.6em;
+		}
+	}
+
+	@keyframes cursor{
+		from {
+			border-right-color: #F6efea
+		}
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	#principal-home h3 {
+		opacity: 0;
+		animation-name: show-up;
+		animation-duration: 2s;
+		animation-delay: 5.5s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes show-up {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	#serviços img, #sobre img {
 		width: 360px;
 		height: 350px;
-	}
-
-	#principal-portifólio {
-		flex-direction: row;
-		max-width: 70vw;
-		max-height: 100vh;
-		margin: auto;
 	}
 
 	#portifólio img {
 		width: 400px;
 		height: 250px;
 		padding: 20px;
-	}
-
-	#principal-sobre {
-		flex-direction: row;
-		max-width: 70vw;
-		max-height: 100vh;
-		margin: auto;
-	}
-
-	#sobre img {
-		width: 360px;
-		height: 350px;
 	}
 }
