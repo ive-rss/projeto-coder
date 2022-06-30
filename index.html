@@ -1,145 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>MinhaLogo</title>
-		<link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon"/>
-		<link rel="stylesheet" href="style.css"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;900&display=swap" rel="stylesheet">
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MinhaLogo</title>
+	<link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;900&display=swap" rel="stylesheet">
+</head>
 
-	<body>
-		<section class="home-grid-container" id="home">
-			<header id="header">
-				<a id="logo" href="index.html">
-						<img src="imagens/Logotipo3.png" alt="logotipo">
-						<div id="logo-text">MinhaLogo</div>
-				</a>
-				
-				<ul class="menu">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#serviços">Serviços</a></li>
-						<li><a href="#portifólio">Portifólio</a></li>
-						<li><a href="#sobre">Sobre</a></li>
-						<li><a href="#contato">Contato</a></li>
-				</ul>
-				</nav>
-			</header>
+<body>
+	<section class="home-grid-container" id="home">
+		<nav class="navbar navbar-expand-lg bg-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#" id="logo-text">
+                <img src="imagens/Logotipo3.png" alt="" width="50" height="42" class="d-inline-block align-text-top">
+                MinhaLogo
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active"  id="item-menu" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  id="item-menu" href="#serviços">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="item-menu" href="#portifólio">Portifolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="item-menu" href="#sobre">Sobre Mim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="item-menu" href="#contato">Contato</a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
 
-			<main id="principal-home">
-				<h1 class="typing-animation">
-					Lorem ipsum dolor sit amet!
-				</h1>
-				<h3 class="showup-animation">
-					Consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
-				</h3>
+		<main id="principal-home">
+			<h1 class="typing-animation">
+				Lorem ipsum dolor sit amet!
+			</h1>
+			<h3 class="showup-animation">
+				Consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta,
+				repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
+			</h3>
 
-				<div>
-					<img src="imagens/proud_coder_marine.svg">
-				</div>
-			</main>
-		</section>
-
-		<section class="serviços-grid-container" id="serviços">
-			<h1>Serviços</h1>
-
-			<div id="principal-serviços" class="desktop-view">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
-				</p>
-				
-				<img src="imagens/web_development_lilas.svg" alt="imagem ilustrativa dos serviços">
-			</div>
-		</section>
-
-		<section class="portifólio-grid-container" id="portifólio">
-				<h1>Portifólio</h1>
-				
-				<div id="principal-portifólio" class="desktop-view">
-					<div>
-						<img src="imagens/portifolio1.jpg" alt="Portifolio 1" class="foto-portifolio">Portifólio 1</img><br>
-						<img src="imagens/portifolio2.jpg" alt="Portifolio 2" class="foto-portifolio">Portifólio 2</img><br>
-					</div>
-					<div>
-						<img src="imagens/portifolio3.png" alt="Portifolio 3" class="foto-portifolio">Portifólio 3</img><br>
-						<img src="imagens/portifolio4.jpg" alt="Portifolio 4" class="foto-portifolio">Portifólio 4</img><br>
-					</div>
-				</div>
-		</section>
-
-		<section class=sobre-grid-container id="sobre">
 			<div>
-				<h1>Sobre Mim</h1>
+				<img src="imagens/proud_coder_marine.svg">
 			</div>
+		</main>
+	</section>
 
-			<div class="desktop-view" id="principal-sobre">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
-				</p>
+	<section class="serviços-grid-container" id="serviços">
+		<h1>Serviços</h1>
 
-				<img src="imagens/dev_focus_lilas.svg" alt="foto profissional">
+		<div id="principal-serviços" class="desktop-view">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum
+				enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum
+				enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
+			</p>
+
+			<img src="imagens/web_development_lilas.svg" alt="imagem ilustrativa dos serviços">
+		</div>
+	</section>
+
+	<section class="portifólio-grid-container" id="portifólio">
+		<h1>Portifólio</h1>
+
+		<!-- <div id="principal-portifólio" class="desktop-view">
+			<div>
+				<img src="imagens/portifolio1.jpg" alt="Portifolio 1" class="foto-portifolio">Portifólio 1</img><br>
+				<img src="imagens/portifolio2.jpg" alt="Portifolio 2" class="foto-portifolio">Portifólio 2</img><br>
 			</div>
-		</section>
+			<div>
+				<img src="imagens/portifolio3.png" alt="Portifolio 3" class="foto-portifolio">Portifólio 3</img><br>
+				<img src="imagens/portifolio4.jpg" alt="Portifolio 4" class="foto-portifolio">Portifólio 4</img><br>
+			</div>
+		</div> -->
+		<div class="container">
+			<div class="row" style="justify-content: center">
+					<div class="col-lg-10">
+						<div id="carouselExampleIndicators" class="carousel slide w-100 h-75" data-bs-ride="true">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+					
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img src="imagens/Portifolio.png" class="d-block w-100 h-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							<img src="imagens/Portifolio.png" class="d-block w-100 h-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							<img src="imagens/Portifolio.png" class="d-block w-100 h-100" alt="...">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
 
-		<section>
-			<div  class="contato-grid-container" id="contato">
-				<h1>Contato</h1>	
-				<form action="formulario">
+	<section class=sobre-grid-container id="sobre">
+		<div>
+			<h1>Sobre Mim</h1>
+		</div>
+
+		<div class="desktop-view" id="principal-sobre">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum
+				enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ex non atque quas, corporis magni cum
+				enim, a, maiores dicta, repellat facere laboriosam rerum iusto quaerat tenetur cupiditate nihil sequi.
+			</p>
+
+			<img src="imagens/dev_focus_lilas.svg" alt="foto profissional">
+		</div>
+	</section>
+
+	<section>
+		<div class="contato-grid-container" id="contato">
+			<h1>Contato</h1>
+			<form action="formulario">
+				<fieldset>
+					<legend>Informações para Contato</legend>
+
+					<label for="name">Nome</label><br>
+					<input type="text" name="nome" placeholder="Nome completo" class="campo-formulario">
+
+					<br><br>
+
+					<label for="email">Email</label><br>
+					<input type="text" name="email" placeholder="aaaa@email.com" class="campo-formulario">
+
+					<br><br>
+
+					<label for="telefone">Telefone</label><br>
+					<input type="text" name="telefone" placeholder="(99) 99999-9999" class="campo-formulario">
+
+					<br><br>
+
+					<label>Mensagem</label><br>
+					<textarea placeholder="Mensagem" class="campo-formulario"></textarea>
+
+					<br><br>
+
 					<fieldset>
-						<legend>Informações para Contato</legend>
-	
-						<label for="name">Nome</label><br>
-						<input type="text" name="nome" placeholder="Nome completo" class="campo-formulario">
-	
-						<br><br>
-	
-						<label for="email">Email</label><br>
-						<input type="text" name="email" placeholder="aaaa@email.com" class="campo-formulario">
-	
-						<br><br>
-	
-						<label for="telefone">Telefone</label><br>
-						<input type="text" name="telefone" placeholder="(99) 99999-9999" class="campo-formulario">
-	
-						<br><br>
-	
-						<label>Mensagem</label><br>
-						<textarea placeholder="Mensagem" class="campo-formulario"></textarea>
-	
-						<br><br>
-	
-						<fieldset>
-							<legend>Preferência de Contato:</legend>
-	
-							<input type="radio" name="preferência" value="email"> 
-							<label for="preferencia">Email</label>
-	
-							<input type="radio" name="preferência" value="telefone">
-							<label for="preferencia">Telefone</label>
-						</fieldset>
-	
-						<br>
-	
-						<input type="submit" value="Enviar Formulário" id="contato-button">
+						<legend>Preferência de Contato:</legend>
+
+						<input type="radio" name="preferência" value="email">
+						<label for="preferencia">Email</label>
+
+						<input type="radio" name="preferência" value="telefone">
+						<label for="preferencia">Telefone</label>
 					</fieldset>
-				</form>
+
+					<br>
+
+					<input type="submit" value="Enviar Formulário" id="contato-button">
+				</fieldset>
+			</form>
+		</div>
+
+		<footer>
+			<div id="copy">
+				<p>&copy; 2022 Nome Sobrenome</p>
 			</div>
 
-			<footer>
-				<div id="copy">
-					<p>&copy; 2022 Nome Sobrenome</p>
-				</div>
-				
-				<div id="redes-sociais">
-					<a href="https://facebook.com"><img src="imagens/icone-facebook.png" alt="Facebook"></a>
-					<a href="https://instagram.com"><img src="imagens/icone-instagram.png" alt="Instagram"></a>
-					<a href="https://github.com"><img src="imagens/icone-github.png" alt="GitHub"></a>
-				</div>
-			</footer>
-		</section>
-	</body>
+			<div id="redes-sociais">
+				<a href="https://facebook.com"><img src="imagens/icone-facebook.png" alt="Facebook"></a>
+				<a href="https://instagram.com"><img src="imagens/icone-instagram.png" alt="Instagram"></a>
+				<a href="https://github.com"><img src="imagens/icone-github.png" alt="GitHub"></a>
+			</div>
+		</footer>
+	</section>
+	<script src="bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
