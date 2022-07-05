@@ -342,7 +342,7 @@ footer {
 
 	.typing-animation {
 		animation: cursor 800ms steps(40) infinite normal, 
-			typing 4s steps(40) 1s normal both;
+			typing 2.5s steps(40) 1s normal both;
 	}
 
 	@keyframes typing {
@@ -367,7 +367,7 @@ footer {
 		opacity: 0;
 		animation-name: show-up;
 		animation-duration: 2s;
-		animation-delay: 5.5s;
+		animation-delay: 4.5s;
 		animation-fill-mode: forwards;
 	}
 
