@@ -1,0 +1,56 @@
+@media screen and (min-width: 1024px) {
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#logo {
+		margin-left: 30px;
+	}
+
+	#item-menu {
+		flex-wrap: nowrap;
+		align-items: center;
+        background-color: transparent;
+		position: relative;
+		padding: 0 10px;
+
+        &:hover {
+            color: white;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #04f4bc;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            bottom: -8px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 250ms ease-in;
+        }
+    
+    &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+            width: 100%;
+        }
+	}
+
+	.desktop-view {
+		flex-direction: row !important;
+		max-width: 70vw;
+		max-height: 100vh;
+		margin: auto;
+	}
+
+	#principal-home h1 {
+		border-right: 2px solid $primary-color;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	@import 'animações';
+}

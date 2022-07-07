@@ -1,0 +1,154 @@
+@import 'reset';
+@import 'variaveis';
+@import 'mixins';
+
+body {
+	display: grid;
+	height: 100vh;
+	overflow-x: hidden;
+	grid-template-columns: 100vw;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: "home-grid-container" "serviços-grid-container" "portifólio-grid-container" "sobre-grid-container" "contato-grid-container";
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+#home {
+    grid-area: home-grid-container;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 5fr;
+	grid-template-areas: "header" "principal-home";
+	height: 100vh;
+	background-image: $background-gradient;
+	background-size: cover;
+	font-family: $primary-font;
+
+    @import 'header';
+
+    #principal-home {
+        grid-area: principal-home;
+        @include principal-section;
+        justify-content: space-evenly;
+        font-size: 1.2em;
+        max-width: 70vw;
+        max-height: 100vh;
+        height: 50vh;
+        margin: auto;
+        padding: 0px 15px;
+        padding-bottom: 50px;
+
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: .1;
+            max-width: 100vw;
+        }
+    }
+    
+    h1 {
+        font-weight: 900;
+        text-shadow: 5px 4px 2px #6d436c;
+        @include home-title;
+    }
+    
+    h3 {
+        font-weight: 400;
+        text-shadow: 4px 3px 2px #04f4ba36;
+        @include home-title;
+    }
+}
+
+#serviços {
+	grid-area: serviços-grid-container;
+	grid-template-rows: 20% 80%;
+	grid-template-areas: "titulo-serviços" "principal-serviços";
+    @include grid-section;
+    @include top-border-section;
+
+    h1 {
+        grid-area: titulo-serviços;
+        @include section-title;
+    }
+
+    #principal-serviços {
+        grid-area: principal-serviços;
+        @include principal-section;
+    }
+
+    p {
+        @include text-section;
+    }
+
+    img {
+        @include image-size;
+    }
+}
+
+#portifólio {
+    grid-area: portifólio-grid-container;
+	grid-template-rows: 10% 90%;
+	grid-template-areas: "titulo-fortfólio" "principal-portifólio";
+    @include grid-section;
+    @include top-border-section;
+
+    h1 {
+        grid-area: titulo-fortfólio;
+        @include section-title;
+    }
+
+    #principal-portifólio {
+        grid-area: principal-portifólio;
+        @include principal-section;
+    }
+}
+
+#sobre {
+	grid-area: sobre-grid-container;
+	grid-template-rows: 20% 80%;
+	grid-template-areas: "titulo-sobre" "principal-sobre";
+    @include grid-section;
+    @include top-border-section;
+
+    h1 {
+        grid-area: titulo-sobre;
+        @include section-title;
+    }
+
+    #principal-sobre {
+        grid-area: principal-sobre;
+        gap: 1em;
+        @include principal-section;
+    }
+
+    p {
+        @include text-section;
+    }
+
+    img {
+        @include image-size;
+    }
+}
+
+#contato {
+	grid-area: contato-grid-container;
+	grid-template-rows: 20% 60% 20%;
+	grid-template-areas: "titulo-contato" "formulário-contato" "footer";
+    @include grid-section;
+    @include top-border-section;
+
+    h1 {
+        grid-area: titulo-contato;
+        @include section-title;
+    }
+
+    @import 'formulário-contato';
+}
+
+@import 'footer';
+
+@import 'desktop-view';
