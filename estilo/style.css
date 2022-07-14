@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
   grid-template-columns: 100vw;
   grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "home-grid-container" "serviços-grid-container" "portifólio-grid-container" "sobre-grid-container" "contato-grid-container";
+  grid-template-areas: "home-grid-container" "serviços-grid-container" "portfólio-grid-container" "sobre-grid-container" "contato-grid-container";
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -148,21 +148,19 @@ body {
   opacity: 0.1;
   max-width: 100vw;
 }
-#home h1 {
-  font-weight: 900;
-  text-shadow: 5px 4px 2px #6d436c;
+#home .home-title, #home .home-title h3, #home .home-title h1 {
   font-family: "Montserrat", sans-serif;
   color: #F6efea;
   text-align: center;
   z-index: 1;
 }
-#home h3 {
+#home .home-title h1 {
+  font-weight: 900;
+  text-shadow: 5px 4px 2px #6d436c;
+}
+#home .home-title h3 {
   font-weight: 400;
   text-shadow: 4px 3px 2px rgba(4, 244, 186, 0.2117647059);
-  font-family: "Montserrat", sans-serif;
-  color: #F6efea;
-  text-align: center;
-  z-index: 1;
 }
 
 #serviços {
@@ -199,10 +197,10 @@ body {
   height: 18rem;
 }
 
-#portifólio {
-  grid-area: portifólio-grid-container;
+#portfólio {
+  grid-area: portfólio-grid-container;
   grid-template-rows: 10% 90%;
-  grid-template-areas: "titulo-fortfólio" "principal-portifólio";
+  grid-template-areas: "titulo-fortfólio" "principal-portfólio";
   display: grid;
   grid-template-columns: 100%;
   height: 100vh;
@@ -212,14 +210,14 @@ body {
   border-top: solid 5px #04f4bc;
   margin: 0px 20px;
 }
-#portifólio h1 {
+#portfólio h1 {
   grid-area: titulo-fortfólio;
   text-shadow: 2px 2px 1px #bac;
   margin-left: 50px;
   font-weight: 900;
 }
-#portifólio #principal-portifólio {
-  grid-area: principal-portifólio;
+#portfólio #principal-portfólio {
+  grid-area: principal-portfólio;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,12 +309,17 @@ body {
 footer {
   grid-area: footer;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to right top, #a386e7, #a586e7, #a786e7, #a986e7, #ab86e7, #a887e7, #a687e8, #a388e8, #9c8ae8, #948be8, #8d8de8, #868ee7);
   padding-top: 10px;
   position: absolute;
   width: 100vw;
+}
+footer .footer-icones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer #copy {
   color: #F6efea;
@@ -329,7 +332,7 @@ footer #copy {
 }
 footer #redes-sociais {
   gap: 0.5rem;
-  padding-bottom: 5px;
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 1024px) {

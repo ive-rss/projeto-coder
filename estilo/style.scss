@@ -1,6 +1,6 @@
 @import 'reset';
 @import 'variaveis';
-@import 'mixins';
+@import 'mixins+maps';
 
 body {
 	display: grid;
@@ -8,7 +8,7 @@ body {
 	overflow-x: hidden;
 	grid-template-columns: 100vw;
 	grid-template-rows: repeat(5, 1fr);
-	grid-template-areas: "home-grid-container" "serviços-grid-container" "portifólio-grid-container" "sobre-grid-container" "contato-grid-container";
+	grid-template-areas: "home-grid-container" "serviços-grid-container" "portfólio-grid-container" "sobre-grid-container" "contato-grid-container";
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -49,17 +49,24 @@ body {
             max-width: 100vw;
         }
     }
-    
-    h1 {
-        font-weight: 900;
-        text-shadow: 5px 4px 2px #6d436c;
-        @include home-title;
-    }
-    
-    h3 {
-        font-weight: 400;
-        text-shadow: 4px 3px 2px #04f4ba36;
-        @include home-title;
+
+    .home-title {
+        font-family: $primary-font;
+        color: $primary-color;
+        text-align: center;
+        z-index: 1;
+
+        h1 {
+            @extend .home-title;
+            font-weight: 900;
+            text-shadow: 5px 4px 2px #6d436c;
+        }
+        
+        h3 {
+            @extend .home-title;
+            font-weight: 400;
+            text-shadow: 4px 3px 2px #04f4ba36;
+        }
     }
 }
 
@@ -72,7 +79,9 @@ body {
 
     h1 {
         grid-area: titulo-serviços;
-        @include section-title;
+        text-shadow: map-get($section-title, shadow);
+        margin-left: map-get($section-title, margin);
+        font-weight: map-get($section-title, wFont);
     }
 
     #principal-serviços {
@@ -89,20 +98,22 @@ body {
     }
 }
 
-#portifólio {
-    grid-area: portifólio-grid-container;
+#portfólio {
+    grid-area: portfólio-grid-container;
 	grid-template-rows: 10% 90%;
-	grid-template-areas: "titulo-fortfólio" "principal-portifólio";
+	grid-template-areas: "titulo-fortfólio" "principal-portfólio";
     @include grid-section;
     @include top-border-section;
 
     h1 {
         grid-area: titulo-fortfólio;
-        @include section-title;
+        text-shadow: map-get($section-title, shadow);
+        margin-left: map-get($section-title, margin);
+        font-weight: map-get($section-title, wFont);
     }
 
-    #principal-portifólio {
-        grid-area: principal-portifólio;
+    #principal-portfólio {
+        grid-area: principal-portfólio;
         @include principal-section;
     }
 }
@@ -116,7 +127,9 @@ body {
 
     h1 {
         grid-area: titulo-sobre;
-        @include section-title;
+        text-shadow: map-get($section-title, shadow);
+        margin-left: map-get($section-title, margin);
+        font-weight: map-get($section-title, wFont);
     }
 
     #principal-sobre {
@@ -143,7 +156,9 @@ body {
 
     h1 {
         grid-area: titulo-contato;
-        @include section-title;
+        text-shadow: map-get($section-title, shadow);
+        margin-left: map-get($section-title, margin);
+        font-weight: map-get($section-title, wFont);
     }
 
     @import 'formulário-contato';

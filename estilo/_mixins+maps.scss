@@ -1,15 +1,4 @@
-@mixin home-title {
-	font-family: $primary-font;
-	color: $primary-color;
-	text-align: center;
-	z-index: 1;
-}
-
-@mixin section-title {
-    text-shadow: 2px 2px 1px #bac;
-	margin-left: 50px;
-	font-weight: 900;
-}
+//Mixins
 
 @mixin top-border-section {
 	border-top: solid 5px $secondary-color;
@@ -40,3 +29,11 @@
 	width: 18rem;
 	height: 18rem;
 }
+
+//Maps
+
+$section-title: (
+	shadow: 2px 2px 1px #bac,
+	margin: 50px,
+	wFont: 900,
+);
