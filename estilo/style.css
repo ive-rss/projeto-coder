@@ -17,6 +17,7 @@ body {
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 #home {
@@ -415,6 +416,30 @@ footer #redes-sociais {
       opacity: 1;
     }
   }
+}
+.btn-backtop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(237, 229, 222, 0.8509803922);
+  opacity: 0.5;
+  text-decoration: none;
+}
+.btn-backtop::after {
+  content: "↑";
+  font-size: 32px;
+  font-weight: bold;
+  color: #04f4bc;
+  transition: margin-top 250ms;
+}
+.btn-backtop:hover::after {
+  margin-top: -8px;
 }
 
 /*# sourceMappingURL=style.css.map */
