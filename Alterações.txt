@@ -1,0 +1,6 @@
+Entrega final em 07/08/2022:
+
+
+Todo o layout e código do site foi modificado, tanto o HTML quanto o CSS.
+
+Os textos Lorem Ipsum foram substituídos por textos reais.

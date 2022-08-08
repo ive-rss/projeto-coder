@@ -1,0 +1,73 @@
+.contato {
+ grid-area: contato;
+ max-width: 1200px;
+ padding: 60px;
+ margin: 0 auto;
+
+ h1 {
+  font-size: 3em;
+  margin-bottom: .5em;
+  color: #525252;
+  text-align: center;
+ }
+
+ .formulario {
+
+  form {
+   display: grid;
+   grid-template-columns: 100%;
+   margin: 0px auto;
+
+   .item-formulario {
+    border: none;
+    border-radius: 5px;
+    background-color: #ededed;
+    // width: 500px;
+    // height: 40px;
+    height: 30px;
+    font-family: 'Fira-sans', sans-serif;
+    color: #525252;
+   }
+
+   #campo-mensagem {
+    border: none;
+    border-radius: 5px;
+    background-color: #ededed;
+    width: 500px;
+    height: 100px;
+   }
+
+   #contato-button {
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    justify-self: center;
+    font-family: 'Fira-sans', sans-serif;
+    color: white;
+    background-color: #8844ee;
+    cursor: pointer;
+   }
+  }
+ }
+}
+
+@media screen and (max-width: 768px) {
+
+  form {
+   justify-items: center;
+
+   .item-formulario {
+    width: 200px;
+    height: 30px;
+   } 
+  }
+
+  #campo-mensagem {
+   width: 200px !important; 
+   height: 30px;
+  }
+
+  #contato-button {
+   width: 100px;
+  }
+ }

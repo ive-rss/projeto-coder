@@ -1,0 +1,58 @@
+.home {
+ grid-area: home;
+ max-width: 1200px;
+ padding: 0 20px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: 100px;
+ align-items: center;
+
+ h1 {
+  font-size: 4.5rem;
+  line-height: 1.125em;
+  margin-bottom: 30px;
+  position: relative;
+  color: #343434;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: ease-in;
+ }
+
+ img {
+  width: 360px;
+  height: 520px;
+  transition: ease-in;
+ }
+}
+
+@media screen and (max-width: 1000px) {
+ .home 
+  h1 {
+   font-size: 3rem;
+ }
+}
+
+@media screen and (max-width: 800px) {
+ .home {
+   grid-template-columns: 1fr;
+   gap: 40px;
+
+   h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  img {
+    max-height: 150px;
+    padding-top: 10px;
+    justify-self: center;
+  }
+ }
+}
+
+@media screen and (max-width: 400px) {
+ .home {
+   grid-template-columns: 1fr;
+ }
+}
