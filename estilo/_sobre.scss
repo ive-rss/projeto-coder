@@ -1,45 +1,25 @@
+
 // SOBRE
 
 .sobre {
  grid-area: sobre;
- @include layout-section;
-
- h1 {
-  @include section-h1;
- }
-
- h2 {
-  @include section-h2;
- }
-
- .container-section {
-  @include container-section;
 
   .section-item {
-   @include section-item;
 
-   h4 {
-    @include section-h4;
-   }
-
-   &:nth-of-type(2n+1) h4::before {
+    &:nth-of-type(2n+1) h4::before {
     background: #8844ee;
-   }
+    }
 
-   &:nth-of-type(2n+2) h4::before {
+    &:nth-of-type(2n+2) h4::before {
     background: #00BFA6;
-   }
+    }
 
-   p {
-     @include section-p;
-   }
-
-   li {
+    li {
     font-size: 1.25em;
     line-height: 1.4;
     color: #7c7c7c;
-   }
+    }
   }
- }
 }
+
 

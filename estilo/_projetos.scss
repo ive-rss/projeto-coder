@@ -1,21 +1,11 @@
+
 // PROJETOS
 
 .projetos {
  grid-area: projetos;
- @include layout-section;
-
- h1 {
-  @include section-h1;
- }
-
- .container-section {
-  @include container-section;
 
   .section-item {
-   @include section-item;
-
    h4 {
-    @include section-h4;
     cursor: pointer;
    }
 
@@ -28,9 +18,7 @@
    }
 
    p {
-     @include section-p;
      cursor: pointer;
    }
   }
- }
 }

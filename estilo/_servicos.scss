@@ -1,48 +1,22 @@
+
 // SERVIÇOS
 
 .servicos {
  grid-area: servicos;
  border-top: 2px solid #8844ee;
- @include layout-section;
- 
 
- h1 {
-  @include section-h1;
- }
+ .section-item {
 
- h2 {
-  @include section-h2;
- }
+  &:nth-of-type(3n+1) h4::before {
+   background: #8844ee;
+  }
 
- h3 {
-  @include section-h3;
- }
+  &:nth-of-type(3n+2) h4::before {
+   background: #00BFA6;
+  }
 
- .container-section {
-  @include container-section;
-
-  .section-item {
-   @include section-item;
-
-   h4 {
-    @include section-h4;
-   }
-   
-   &:nth-of-type(3n+1) h4::before {
-    background: #8844ee;
-   }
-
-   &:nth-of-type(3n+2) h4::before {
-    background: #00BFA6;
-   }
-
-   &:nth-of-type(3n+3) h4::before {
-    background: #8844ee;
-   }
-  
-   p {
-    @include section-p;
-   }
+  &:nth-of-type(3n+3) h4::before {
+   background: #8844ee;
   }
  }
 }

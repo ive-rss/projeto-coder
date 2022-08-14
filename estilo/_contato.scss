@@ -1,17 +1,9 @@
+
 // CONTATO
 
 .contato {
  grid-area: contato;
- max-width: 1200px;
- padding: 60px;
- margin: 0 auto;
-
- h1 {
-  font-size: 3em;
-  margin-bottom: .5em;
-  color: #525252;
-  text-align: center;
- }
+ border-bottom: none !important;
 
  .formulario {
 
@@ -19,13 +11,11 @@
    display: grid;
    grid-template-columns: 100%;
    margin: 0px auto;
-
+    
    .item-formulario {
     border: none;
     border-radius: 5px;
     background-color: #ededed;
-    // width: 500px;
-    // height: 40px;
     height: 30px;
     font-family: 'Fira-sans', sans-serif;
     color: #525252;
@@ -41,6 +31,7 @@
 
    #contato-button {
     border-radius: 5px;
+    border-color: white;
     width: 150px;
     padding: 10px;
     justify-self: center;

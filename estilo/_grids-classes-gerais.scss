@@ -1,0 +1,88 @@
+//GRIDS E CLASSES GERAIS
+
+.estrutura {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas: 
+  'header header'
+  'home home'
+  'servicos servicos'
+  'projetos projetos'
+  'sobre sobre'
+  'contato contato'
+  'footer footer';
+}
+
+@media screen and (max-width: 768px) {
+ .estrutura {
+   grid-template-columns: 100%;
+   grid-template-areas:
+   'header'
+   'home'
+   'servicos'
+   'projetos'
+   'sobre'
+   'contato'
+   'footer';
+ }
+}
+
+.layout-section {
+  max-width: 1200px;
+  padding: 60px;
+  margin: 0 auto;
+  border-bottom: 2px solid #8844ee;
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+    color: #525252;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #525252;
+    font-style: italic;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #525252;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .section-item {
+    flex: 1 1 300px;
+    margin: 5px 10px;
+
+    h4 {
+      font-size: 1.375em;
+      color: #b07dfb;
+      margin-bottom: 20px;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+
+    p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      color: #7c7c7c;
+    }
+  }
+}
+
