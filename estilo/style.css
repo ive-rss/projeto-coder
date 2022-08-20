@@ -268,6 +268,11 @@ img {
 .sobre {
   grid-area: sobre;
 }
+.sobre h2 {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+}
 .sobre .section-item:nth-of-type(2n+1) h4::before {
   background: #8844ee;
 }
@@ -306,12 +311,13 @@ img {
 }
 .contato .formulario form #contato-button {
   border-radius: 5px;
-  border-color: white;
-  width: 150px;
-  padding: 10px;
+  border: 1px solid #8844ee;
+  width: 180px;
+  padding: 10px 20px;
   justify-self: center;
   font-family: "Fira-sans", sans-serif;
   color: white;
+  font-size: 1rem;
   background-color: #8844ee;
   cursor: pointer;
 }

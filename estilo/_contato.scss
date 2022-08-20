@@ -31,13 +31,15 @@
 
    #contato-button {
     border-radius: 5px;
-    border-color: white;
-    width: 150px;
-    padding: 10px;
+    border: 1px solid #8844ee;
+    width: 180px;
+    padding: 10px 20px;
     justify-self: center;
     font-family: 'Fira-sans', sans-serif;
     color: white;
+    font-size: 1rem;
     background-color: #8844ee;
+    
     cursor: pointer;
    }
   }

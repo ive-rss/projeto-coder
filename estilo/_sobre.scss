@@ -4,6 +4,12 @@
 .sobre {
  grid-area: sobre;
 
+ h2 {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  }
+
   .section-item {
 
     &:nth-of-type(2n+1) h4::before {
